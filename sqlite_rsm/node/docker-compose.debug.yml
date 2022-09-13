@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   sqlitersm:
-    image: sqlitersm
+    image: sqlitersm_node
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -11,4 +11,4 @@ services:
       - 5002:5002
       - 5678:5678
     environment:
-      - FLASK_APP=sqlite-rsm/__main__.py
+      - FLASK_APP=__main__.py
