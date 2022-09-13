@@ -8,9 +8,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name='sqlite-rsm',
+    name='sqlite_rsm',
     version='0.1.0',
-    packages=['sqlite-rsm'],
+    packages=['sqlite_rsm'],
     author="Thomas Dokas",
     author_email="dokastho@umich.edu",
     url="https://github.com/dokastho/sqlite-rsm",
