@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "name": "Python: Module",
+            "type": "python",
+            "request": "launch",
+            "module": "sqlite_rsm",
+            "justMyCode": true
+        },
+        {
             "name": "Docker: Python - Flask",
             "type": "docker",
             "request": "launch",
