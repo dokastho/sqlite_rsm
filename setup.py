@@ -30,5 +30,11 @@ setup(
         'requests',
         'selenium',
     ],
-    python_requires='>=3.6'
+    python_requires='>=3.6',
+    entry_points={
+        'console_scripts': [
+            'sqlite_rsm-viewer = sqlite_rsm.viewer.__main__:main',
+            'sqlite_rsm-node = sqlite_rsm.node.__main__:main'
+        ]
+    },
 )

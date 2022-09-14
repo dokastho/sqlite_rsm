@@ -1,7 +1,8 @@
 '''File for launching the rsm fragment.'''
 
 import pathlib
-import sqlite_rsm
+# import sqlite_rsm
+import sqlite_rsm.node as node
 
 
 # fetch schema from url using token
@@ -12,14 +13,14 @@ import sqlite_rsm
 def main():
 
     # check if db file exists
-    db = sqlite_rsm.app.config['DATABASE_FILENAME']
+    db = node.app.config['DATABASE_FILENAME']
 
     db_file = pathlib.Path(db)
     if not db_file.is_file():
         db_file.touch()
 
 
-    sqlite_rsm.app.run(port=0)
+    node.app.run(port=0)
 
 
 if __name__ == "__main__":
