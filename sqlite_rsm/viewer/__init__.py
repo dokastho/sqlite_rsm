@@ -11,3 +11,5 @@ app.config.from_object('sqlite_rsm.viewer.config')
 # EXAMPLE:
 # $ export SITE_SETTINGS=secret_key_config.py
 app.config.from_envvar('SITE_SETTINGS', silent=True)
+
+from sqlite_rsm.viewer.__main__ import Viewer

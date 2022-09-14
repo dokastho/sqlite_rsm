@@ -10,6 +10,12 @@ import sqlite_rsm.node as node
 # start the sqlite db
 # connect to a master if one exists
 
+
+class Node:
+    
+    def __init__(self) -> None:
+        pass
+
 def main():
 
     # check if db file exists

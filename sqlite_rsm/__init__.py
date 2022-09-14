@@ -1,3 +1,3 @@
 
-from sqlite_rsm import node
-from sqlite_rsm import viewer
+from sqlite_rsm.node import Node
+from sqlite_rsm.viewer import Viewer

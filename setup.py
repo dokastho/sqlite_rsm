@@ -34,7 +34,8 @@ setup(
     entry_points={
         'console_scripts': [
             'sqlite_rsm-viewer = sqlite_rsm.viewer.__main__:main',
-            'sqlite_rsm-node = sqlite_rsm.node.__main__:main'
+            'sqlite_rsm-node = sqlite_rsm.node.__main__:main',
+            'sqlite_rsm = sqlite_rsm.bootstrap:main'
         ]
     },
 )
