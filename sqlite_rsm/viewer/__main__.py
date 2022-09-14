@@ -3,7 +3,8 @@
 class Viewer:
     
     def __init__(self) -> None:
-        pass
+        print("\tstarting viewer")
+        print("\tviewer start complete")
 
 def main():
     pass

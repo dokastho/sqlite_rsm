@@ -1,6 +1,7 @@
 '''File for launching the rsm fragment.'''
 
 import pathlib
+from traceback import print_tb
 # import sqlite_rsm
 import sqlite_rsm.node as node
 
@@ -12,21 +13,23 @@ import sqlite_rsm.node as node
 
 
 class Node:
-    
+
     def __init__(self) -> None:
-        pass
+        print("\tstarting node")
+        print("\tnode start complete")
+        # # check if db file exists
+        # db = node.app.config['DATABASE_FILENAME']
+
+        # db_file = pathlib.Path(db)
+        # if not db_file.is_file():
+        #     db_file.touch()
+
+        node.app.run(port=0)
+
 
 def main():
 
-    # check if db file exists
-    db = node.app.config['DATABASE_FILENAME']
-
-    db_file = pathlib.Path(db)
-    if not db_file.is_file():
-        db_file.touch()
-
-
-    node.app.run(port=0)
+    Node()
 
 
 if __name__ == "__main__":

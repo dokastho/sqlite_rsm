@@ -1,9 +1,5 @@
 """Database API."""
-from datetime import datetime
-import hashlib
 import sqlite3
-import uuid
-import pathlib
 import sqlite_rsm
 import flask
 
