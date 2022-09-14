@@ -17,12 +17,12 @@ class Node:
     def __init__(self) -> None:
         print("\tstarting node")
         print("\tnode start complete")
-        # # check if db file exists
-        # db = node.app.config['DATABASE_FILENAME']
+        # check if db file exists
+        db = node.app.config['DATABASE_FILENAME']
 
-        # db_file = pathlib.Path(db)
-        # if not db_file.is_file():
-        #     db_file.touch()
+        db_file = pathlib.Path(db)
+        if not db_file.is_file():
+            db_file.touch()
 
         node.app.run(port=0)
 

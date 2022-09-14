@@ -5,6 +5,9 @@
             "type": "python",
             "request": "launch",
             "module": "sqlite_rsm",
+            "args": [
+                "node"
+            ],
             "justMyCode": true
         },
         {
