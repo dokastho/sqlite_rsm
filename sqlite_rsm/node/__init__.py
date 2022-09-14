@@ -14,3 +14,4 @@ app.config.from_envvar('SITE_SETTINGS', silent=True)
 
 
 from sqlite_rsm.node.__main__ import Node
+from sqlite_rsm.node.routes import serve_db, close_db

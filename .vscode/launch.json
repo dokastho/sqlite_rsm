@@ -1,12 +1,39 @@
 {
     "configurations": [
         {
-            "name": "Python: Module",
+            "name": "Python: Flask",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "sqlite_rsm",
+                "FLASK_DEBUG": "1"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Debug Node",
             "type": "python",
             "request": "launch",
             "module": "sqlite_rsm",
             "args": [
                 "node"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "Debug Viewer",
+            "type": "python",
+            "request": "launch",
+            "module": "sqlite_rsm",
+            "args": [
+                "viewer"
             ],
             "justMyCode": true
         },
